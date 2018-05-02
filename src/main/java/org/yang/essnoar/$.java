@@ -2,6 +2,8 @@ package org.yang.essnoar;
 
 import org.jetbrains.annotations.Nullable;
 
+import java.io.File;
+
 /**
  * unsorted utility class
  */
@@ -29,6 +31,17 @@ public class $ {
 
         Thread.dumpStack();
         System.exit(2);
+    }
+
+    /**
+     * Given an absolute {@code path} to a file (not a directory),
+     * returns the module name for the file.  If the file is an __init__.py,
+     * returns the last component of the file's parent directory, else
+     * returns the filename without path or extension.
+     */
+    public static String moduleName(String path) {
+        // todo
+        return null;
     }
 
 }

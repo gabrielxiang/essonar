@@ -13,5 +13,14 @@ public enum NodeType {
     DELETE,
     FOR,
     FUNCTIONDEF,
-    HANDLER, IFEXP, IF, NAME
+    HANDLER,
+    IFEXP,
+    IF,
+    MODULE,
+    ESSET,
+    ESINT,
+    ESFLOAT,
+    RETURN,
+    ESLIST,
+    STR, TRY, UNARYOP, WHILE, NAME
 }
