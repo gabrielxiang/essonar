@@ -15,4 +15,20 @@ public class $ {
         }
     }
 
+    public static void die(String msg) {
+        die(msg, null);
+    }
+
+
+    public static void die(String msg, Exception e) {
+        System.err.println(msg);
+
+        if (e != null) {
+            System.err.println("Exception: " + e + "\n");
+        }
+
+        Thread.dumpStack();
+        System.exit(2);
+    }
+
 }
